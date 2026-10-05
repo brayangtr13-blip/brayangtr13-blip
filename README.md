@@ -76,6 +76,7 @@
      quién son los datos; "theme" cambia los colores.
      ============================================================ -->
 ## 🏆 Sala de trofeos
+🦈 Pull Shark ×2 · 🤠 Quickdraw · 🌈 YOLO
 
 <div align="center">
 
