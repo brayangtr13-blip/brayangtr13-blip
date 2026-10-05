@@ -1,0 +1,42 @@
+# Este archivo va en:  .github/workflows/snake.yml
+# Es un "workflow" de GitHub Actions: instrucciones que GitHub
+# ejecuta automáticamente en sus servidores.
+
+name: Generar serpiente
+
+# CUÁNDO se ejecuta
+on:
+  schedule:
+    - cron: "0 */12 * * *"   # cada 12 horas, para mantenerla actualizada
+  workflow_dispatch:          # permite ejecutarlo a mano con un botón
+  push:
+    branches:
+      - main                  # y cada vez que guardes cambios en main
+
+# QUÉ hace
+jobs:
+  generar:
+    runs-on: ubuntu-latest    # usa una máquina Linux de GitHub
+    timeout-minutes: 5
+    permissions:
+      contents: write         # permiso para guardar archivos en el repositorio
+
+    steps:
+      # Paso 1: lee tu gráfico de contribuciones y dibuja la serpiente
+      - name: Generar las imágenes
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      # Paso 2: guarda las imágenes en una rama llamada "output",
+      # que es de donde las lee el README
+      - name: Publicar en la rama output
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
