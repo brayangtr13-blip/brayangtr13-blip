@@ -78,11 +78,6 @@
 ## 🏆 Sala de trofeos
 🦈 Pull Shark ×2 · 🤠 Quickdraw · 🌈 YOLO
 
-<div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=brayangtr13-blip&theme=tokyonight&no-frame=true&no-bg=true&column=6" alt="Trofeos de GitHub" />
-
-</div>
 
 ## 📊 Estadísticas de la partida
 
