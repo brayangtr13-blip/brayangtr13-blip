@@ -5,7 +5,7 @@
      ============================================================ -->
 <div align="center">
 
-# 🎮 BRAYAN TORRES 🐱
+# 🎮 BRAYAN TORRES 🎮
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=0070D1&center=true&vCenter=true&width=600&lines=PRESS+START+para+conocerme;Desarrollador+junior+en+formaci%C3%B3n;Aprendiz+ADSO+%7C+SENA;Programo+con+un+gato+de+copiloto" alt="Texto animado" />
 
